@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-A simple Python script to walk through a directory and list its contents.
+A simple Python script to walk through a directory and list its contents, with recursive scanning capabilities.
 
 ## 🚀 Quick Start
 
@@ -26,17 +26,25 @@ A simple Python script to walk through a directory and list its contents.
 
 ## 📜 Description
 
-DirectoryWalker is a Python script that allows you to scan and list the contents of a directory. It's a handy tool for quickly exploring the files and subdirectories within a folder.
+DirectoryWalker is a Python script that allows you to scan and list the contents of a directory, providing both non-recursive and recursive scanning options. It's a handy tool for quickly exploring the files and subdirectories within a folder.
 
 ## 🧰 Usage
 
-Run the script with the `-p` or `--path` argument to specify the directory you want to scan:
+- **Non-Recursive Scanning**:
+  Run the script with the `-p` or `--path` argument to specify the directory you want to scan non-recursively:
 
-```bash
-python main.py -p /path/to/your/directory
-```
+  ```bash
+  python main.py -p /path/to/your/directory
+  ```
 
-By default, it will scan the "personal-projects" folder on your Desktop if no path is provided.
+- **Recursive Scanning**:
+  To scan the directory and its subdirectories recursively, use the `RecursiveWalk` class:
+
+  ```bash
+  python main.py -p /path/to/your/directory -r
+  ```
+
+  By default, the script will scan the folder where the project code is located if no path is provided.
 
 ## 📝 License
 
